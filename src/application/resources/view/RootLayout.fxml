@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="520.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.java.controllers.RootLayoutController">
+   <top>
+       <MenuBar BorderPane.alignment="CENTER">
+           <Menu mnemonicParsing="false" text="Plik">
+               <MenuItem mnemonicParsing="false" onAction="#addNewOrder" text="Nowy"/>
+               <MenuItem mnemonicParsing="false" text="Generuj PDF"/>
+               <MenuItem mnemonicParsing="false" text="Drukuj"/>
+               <SeparatorMenuItem mnemonicParsing="false"/>
+               <MenuItem mnemonicParsing="false" onAction="#closeApplication" text="Zamknij"/>
+           </Menu>
+           <Menu mnemonicParsing="false" text="Edytuj">
+               <MenuItem mnemonicParsing="false" text="Edytuj"/>
+               <MenuItem mnemonicParsing="false" onAction="#deleteChosenOrder" text="Usuń"/>
+               <SeparatorMenuItem mnemonicParsing="false"/>
+               <MenuItem mnemonicParsing="false" onAction="#showProviderView" text="Właściciel"/>
+           </Menu>
+           <Menu mnemonicParsing="false" text="Pomoc">
+               <MenuItem mnemonicParsing="false" text="O programie"/>
+               <MenuItem mnemonicParsing="false" text="Autor"/>
+           </Menu>
+       </MenuBar>
+   </top>
+    <center>
+        <AnchorPane>
+            <fx:include source="OrdersOverview.fxml"/>
+        </AnchorPane>
+    </center>
+</BorderPane>
