@@ -3,11 +3,13 @@ package application.java.dto;
 
 public class PersonDTO {
 
-    private String lastName;
-    private String firstName;
+    protected String lastName;
+    protected String firstName;
 
 
-    PersonDTO() {
+    public PersonDTO() {
+        firstName = "";
+        lastName = "";
     }
 
     public PersonDTO(String firstName, String lastName) {
@@ -35,4 +37,5 @@ public class PersonDTO {
     public String toString() {
         return firstName + lastName;
     }
+
 }

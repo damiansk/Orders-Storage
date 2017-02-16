@@ -3,12 +3,19 @@ package application.java.dto;
 
 public class OwnerDTO extends PersonDTO {
 
-    private String address = "";
-    private String phone = "";
-    private String nip = "";
-    private String regon = "";
-    private String company = "";
+    private String address;
+    private String phone;
+    private String nip;
+    private String regon;
+    private String company;
 
+    public OwnerDTO() {
+        address = "";
+        phone = "";
+        nip = "";
+        regon = "";
+        company = "";
+    }
 
     public String getAddress() {
         return address;
