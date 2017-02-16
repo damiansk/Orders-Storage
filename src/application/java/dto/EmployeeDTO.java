@@ -1,7 +1,7 @@
 package application.java.dto;
 
 
-public class OwnerDTO extends PersonDTO {
+public class EmployeeDTO extends PersonDTO {
 
     private String address;
     private String phone;
@@ -9,7 +9,7 @@ public class OwnerDTO extends PersonDTO {
     private String regon;
     private String company;
 
-    public OwnerDTO() {
+    public EmployeeDTO() {
         address = "";
         phone = "";
         nip = "";
