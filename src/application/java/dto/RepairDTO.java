@@ -11,6 +11,7 @@ public class RepairDTO {
     private LocalDate date;
     private List<ServiceDTO> repairs;
     private List<ServiceDTO> parts;
+    private EmployeeDTO employee;
 
     public PersonDTO getCustomer() {
         return customer;
@@ -51,4 +52,13 @@ public class RepairDTO {
     public void setParts(List<ServiceDTO> parts) {
         this.parts = parts;
     }
+
+    public EmployeeDTO getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(EmployeeDTO employee) {
+        this.employee = employee;
+    }
+
 }
