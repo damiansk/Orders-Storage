@@ -1,23 +1,14 @@
 package application.java.dto;
 
 
-public class OwnerDTO {
+public class OwnerDTO extends PersonDTO {
 
-    private PersonDTO person = new PersonDTO();
     private String address = "";
     private String phone = "";
     private String nip = "";
     private String regon = "";
     private String company = "";
 
-
-    public PersonDTO getPerson() {
-        return person;
-    }
-
-    public void setPerson(PersonDTO person) {
-        this.person = person;
-    }
 
     public String getAddress() {
         return address;

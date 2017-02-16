@@ -6,14 +6,14 @@ public class PersonDTO {
     private String lastName;
     private String firstName;
 
-    public PersonDTO() {
+
+    PersonDTO() {
     }
 
     public PersonDTO(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-
 
     public String getLastName() {
         return lastName;
