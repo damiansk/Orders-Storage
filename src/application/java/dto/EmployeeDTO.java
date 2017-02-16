@@ -3,6 +3,7 @@ package application.java.dto;
 
 public class EmployeeDTO extends PersonDTO {
 
+    private int id;
     private String address;
     private String phone;
     private String nip;
@@ -15,6 +16,14 @@ public class EmployeeDTO extends PersonDTO {
         nip = "";
         regon = "";
         company = "";
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getAddress() {
@@ -56,5 +65,4 @@ public class EmployeeDTO extends PersonDTO {
     public void setCompany(String company) {
         this.company = company;
     }
-
 }
