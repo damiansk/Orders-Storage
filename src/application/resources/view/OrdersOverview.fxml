@@ -29,6 +29,9 @@
                     <RowConstraints maxHeight="244.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES"/>
                 </rowConstraints>
                 <TableView fx:id="ordersTable">
+                    <placeholder>
+                        <Label text="Brak zlecen"/>
+                    </placeholder>
                     <columns>
                         <TableColumn fx:id="dataColumn" prefWidth="86.0" text="Data"/>
                         <TableColumn fx:id="personColumn" prefWidth="171.0" text="Osoba"/>
@@ -87,7 +90,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
                     </rowConstraints>
                     <Label text="Marka"/>
-                    <Label fx:id="brandLabel" text="Label" GridPane.columnIndex="1"/>
+                    <Label fx:id="brandLabel" GridPane.columnIndex="1"/>
                 </GridPane>
                 <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
                     <columnConstraints>
@@ -98,7 +101,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
                     </rowConstraints>
                     <Label text="Model"/>
-                    <Label fx:id="modelLabel" text="Label" GridPane.columnIndex="1"/>
+                    <Label fx:id="modelLabel" GridPane.columnIndex="1"/>
                 </GridPane>
                 <GridPane GridPane.rowIndex="3">
                     <columnConstraints>
@@ -109,7 +112,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
                     </rowConstraints>
                     <Label text="Rejestracja"/>
-                    <Label fx:id="registrationLabel" text="Label" GridPane.columnIndex="1"/>
+                    <Label fx:id="registrationLabel" GridPane.columnIndex="1"/>
                 </GridPane>
                 <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
                     <columnConstraints>
@@ -120,10 +123,13 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
                     </rowConstraints>
                     <Label text="Poj. silnika"/>
-                    <Label fx:id="capacityLabel" text="Label" GridPane.columnIndex="1"/>
+                    <Label fx:id="capacityLabel" GridPane.columnIndex="1"/>
                 </GridPane>
-                <Label fx:id="personLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label fx:id="personLabel" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
                 <TableView fx:id="partsTable" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+                    <placeholder>
+                        <Label text="Brak danych"/>
+                    </placeholder>
                     <columns>
                         <TableColumn fx:id="partsColumn" prefWidth="184.0" text="Część"/>
                         <TableColumn fx:id="costPartsColumn" prefWidth="64.0" text="Koszt"/>
@@ -135,8 +141,10 @@
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
                     </columnResizePolicy>
                 </TableView>
-                <TableView fx:id="repairsTable" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1"
-                           GridPane.rowIndex="4">
+                <TableView fx:id="repairsTable" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <placeholder>
+                        <Label text="Brak danych"/>
+                    </placeholder>
                     <columns>
                         <TableColumn fx:id="repairsColumn" prefWidth="183.0" text="Naprawa"/>
                         <TableColumn fx:id="costRepairsColumn" prefWidth="64.0" text="Koszt"/>
@@ -157,7 +165,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
                     </rowConstraints>
                     <Label text="Całkowity koszt"/>
-                    <Label fx:id="allCostsLabel" text="Label" GridPane.columnIndex="1"/>
+                    <Label fx:id="allCostsLabel" GridPane.columnIndex="1"/>
                 </GridPane>
                 <GridPane GridPane.columnIndex="1">
                     <columnConstraints>
@@ -168,7 +176,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
                     </rowConstraints>
                     <Label text="Data"/>
-                    <Label fx:id="dataLabel" text="Label" GridPane.columnIndex="1"/>
+                    <Label fx:id="dataLabel" GridPane.columnIndex="1"/>
                 </GridPane>
             </GridPane>
             <ButtonBar layoutY="458.0" prefHeight="40.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0"
