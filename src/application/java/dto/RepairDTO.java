@@ -61,4 +61,18 @@ public class RepairDTO {
         this.employee = employee;
     }
 
+    public float getCost() {
+        float cost = 0;
+
+        for (ServiceDTO repair: repairs) {
+            cost += repair.getPrice();
+        }
+
+        for (ServiceDTO part: parts) {
+            cost += part.getPrice();
+        }
+
+        return cost;
+    }
+
 }
